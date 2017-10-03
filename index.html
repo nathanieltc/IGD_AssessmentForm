@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Into to Graphic Design Assessment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<script src="IGD_form.js"></script>
+
+<style>
+    body{
+        background-color: #CFC493; padding-bottom: 20px;
+    }
+    
+    h2{
+        text-transform: uppercase; color:#006747; text-align: center;
+    }
+    
+    .add_field_button{
+        padding: 10px; background-color: #006747; color: white;     
+    }
+    
+    .btnBtn-default{
+        padding: 10px; background-color: #006747;
+        color: white;
+    }
+    
+    a:link{
+        color: #006747;
+    }
+    
+    a:active, a:visited {
+        color: #009374;
+    }
+    
+    .form-control{
+        max-width: none;
+    }
+    
+</style>
+    
+</head>
+
+
+<body>
+
+<div class="container">
+	<h2>Intro to Graphic Design Assessment Form</h2>
+    <hr>
+    <br>
+	<form action="/action_page.php">
+    	
+        <div class="form-group">
+        	<label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="text" placeholder="Enter First Name" name="firstName">
+        </div>
+        
+        <div class="form-group">
+        	<label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="text" placeholder="Enter Last Name" name="lastName">
+        </div>
+        
+        <div class="form-group">
+        	<label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        
+<br>
+        <form>
+		<div class="form-group">
+        	<p>Which design programs have you used?</p>
+            </div>
+            
+              <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="Photoshop"> Photoshop</label>
+              </div>
+
+              <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="Ilustrator"> Illustrator</label>
+              </div>
+              
+              <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="Indesign"> Indesign</label>
+              </div>
+            </form>
+        
+        <form>
+        
+            
+		<div class="input_fields_wrap">
+        		<button class="add_field_button">Add More Design Programs</button>
+                <div><input type="text" name="mytext[]"></div>
+        </div>
+        </form>
+<br> 
+        <form>
+        <p>Do you know what a PMS color is?</p>
+        <label class="radio-inline">
+        	<input type="radio" name="optradio">Yes
+        </label>
+        
+        <label class="radio-inline">
+        	<input type="radio" name="optradio">No
+        </label>
+        </form>
+
+<br>
+<br>
+        <form>
+		<p>What color mode do we use in print?</p>
+        <label class="radio-inline">
+        	<input type="radio" name="optradio">RGB
+        </label>
+        
+        <label class="radio-inline">
+        	<input type="radio" name="optradio">CMYK
+        </label>
+        </form>    
+<br>
+<br>
+        
+		<p>What would you like to focus on in this course?
+        <br>
+        (Please explain below.)</p>
+        
+        <div class="form-group">
+            <textarea clas="form-control" rows="5" id="comment"></textarea>
+		</div>
+        
+
+		<button type="submit" class="btnBtn-default">Submit</button>
+        
+    </form>
+</div>
+
+
+</body>
+</html>

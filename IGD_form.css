@@ -1,0 +1,31 @@
+<style>
+    body{
+        background-color: #CFC493;
+    }
+    
+    h2{
+        text-transform: uppercase; color:#006747; text-align: center;
+    }
+    
+    .add_field_button{
+        padding: 10px; background-color: #006747; color: white;     
+    }
+    
+    .btnBtn-default{
+        padding: 10px; background-color: #006747;
+        color: white;
+    }
+    
+    a:link{
+        color: #006747;
+    }
+    
+    a:active, a:visited {
+        color: #009374;
+    }
+    
+    .form-control{
+        max-width: none;
+    }
+    
+</style>
